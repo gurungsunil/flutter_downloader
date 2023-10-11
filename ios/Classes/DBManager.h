@@ -19,8 +19,13 @@
 
 -(instancetype)initWithDatabaseFilePath:(NSString *)dbFilePath;
 
--(NSArray *)loadDataFromDB:(NSString *)query;
+-(NSArray *)loadDataFromDB:(NSString *)query withParameters:(NSArray *)parameters;
 
--(void)executeQuery:(NSString *)query;
+- (void)addLazilyColumnForTable:(const char *)table
+                         column:(const char *)column
+                           type:(const char *)type
+                   defaultValue:(const char *)defaultValue;
+
+-(void)executeQuery:(NSString *)query withParameters:(NSArray *)parameters;
 
 @end

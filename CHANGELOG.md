@@ -1,3 +1,12 @@
+## 1.11.3
+
+- Fix for file name not being saved (#894) 
+
+## 1.11.2
+
+- Security update for iOS (#887) 
+- Support file store in any iOS directory (#829)
+
 ## 1.11.1
 
 - Don't crash when `FlutterDownloader.registerCallback()` wasn't called (#879)
